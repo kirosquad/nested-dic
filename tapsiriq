@@ -1,0 +1,125 @@
+telebeler={
+"t1":{"ad":"Yusuf","bal":100},
+"t2":{"ad":"Murad","bal":30},
+"t3":{"ad":"Mina","bal":90},
+"t4":{"ad":"Mehemmed","bal":20},
+"t5":{"ad":"Rustem","bal":60},
+}
+
+
+mallar={
+"m1":{"ad":"Monitor","qiymet":100},
+"m2":{"ad":"Mouse","qiymet":25},
+"m3":{"ad":"Telefon","qiymet":800},
+"m4":{"ad":"Sesucaldan","qiymet":120},
+}
+
+
+oyuncular={
+"p1":{"ad":"Yusuf","puan":30},
+"p2":{"ad":"Mehemmed","puan":60},
+"p3":{"ad":"Rustem","puan":40},
+}
+
+
+
+print("------------------------------")
+print("Tapsiriq 1")
+print("------------------------------")
+
+
+for i in telebeler:
+    print(telebeler[i]["ad"])
+
+
+
+print("------------------------------")
+print("Tapsiriq 2")
+print("------------------------------")
+
+
+for i in telebeler:
+    if telebeler[i]["ad"][0]=="M":
+        print(telebeler[i]["ad"])
+
+
+
+print("------------------------------")
+print("Tapsiriq 3")
+print("------------------------------")
+
+
+for i in telebeler:
+    if telebeler[i]["bal"]>=50:
+        print(telebeler[i]["ad"],"Kecdi")
+    else:
+        print(telebeler[i]["ad"],"Kesildi")
+
+
+
+print("------------------------------")
+print("Tapsiriq 4")
+print("------------------------------")
+
+
+for i in telebeler:
+ if telebeler[i]["bal"]>70:
+   print(telebeler[i]["ad"])
+
+
+
+print("------------------------------")
+print("Tapsiriq 5")
+print("------------------------------")
+
+
+for i in telebeler:
+    if telebeler[i]["bal"]<=60:
+        telebeler[i]["bal"]+=10
+for i in telebeler:
+    print(telebeler[i]["ad"],telebeler[i]["bal"])
+
+
+print("------------------------------")
+print("Tapsiriq 6 ni yazammadim")
+print("------------------------------")
+
+
+("------------------------------")
+print("Tapsiriq 7 ni de yazammadim")
+print("------------------------------")
+
+
+print("------------------------------")
+print("Tapsiriq 8")
+print("------------------------------")
+
+
+for i in mallar:
+    if mallar[i]["qiymet"]>100:
+        mallar[i]["qiymet"]-=15
+for i in mallar:
+    print(mallar[i]["ad"],mallar[i]["qiymet"])
+
+
+
+print("------------------------------")
+print("Tapsiriq 9")
+print("------------------------------")
+
+
+en_yuksek=list(telebeler)
+n=0
+while n<len(en_yuksek):
+    i=en_yuksek[n]
+    if telebeler[i]["bal"]>=80:
+        print(telebeler[i]["ad"],telebeler[i]["bal"])
+        n+=1
+
+
+
+print("------------------------------")
+print("tapsiriq 10 u da yazammadim")
+print("------------------------------")
+
+#3 ədəd tapsiriq yazammadim
